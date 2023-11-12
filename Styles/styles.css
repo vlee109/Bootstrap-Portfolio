@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    display: block;
+    position: relative;
+  }
+  
+  /* Add a background color to the top navigation */
+  .topnav {
+    background-color: peachpuff;
+    overflow: hidden;
+  }
+  
+  header{
+    color: white;
+    float: left;
+    display: inline-block;
+    margin-inline:calc(25px);
+    margin-top:calc(1px);
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    display: inline-block;
+    float:right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 0px;
+    background-color: lightseagreen;
+    text-decoration: underline;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: lightseagreen;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: lightseagreen;
+    color: lightseagreen;
+  }
+  
+  body, html {
+    height: 50%;
+  }
+  
+  /* The hero image */
+  .hero-image {
+    background-color: peachpuff;
+    /* background-image: linear-gradient(red, purple, blue); */
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg"); */
+  
+  /* Set a specific height */
+  height: 300%;
+  
+  /* Position and center the image to scale nicely on all screens */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translate(+50%, -50%);
+  color: white;
+  }
+  
+  .hero-image{
+  object-position:right;
+  }
+  
+  body {
+    display: flexbox;
+    color: lightseagreen;
+    margin: auto;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    overflow: auto;
+  }
+  
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightseagreen;
+    right: 100px;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: center;
+    height: 20%;
+    width: 20%;
+    padding: 0 10px;
+    display:inline-block;
+    grid-template-columns:25% 25% 25% ;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 10px -50px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display:grid;
+    grid-template-rows: 25% 25% 25%;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    margin-left: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 140px;
+    text-align: center;
+    background-color: lightseagreen;
+  }
+  
+  .about-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 50px;
+  }
+  
+  *{margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  .title {
+  border-right: 5px solid;
+  min-height: 100%;
+  text-align: right;
+  padding-right: 40px;
+  min-width: 20%;
+  max-width: 20%;
+  }
+  
+  .about-me{
+    float: right;
+    display: block;
+    margin-block-start: 1px;
+    margin-block-end: 20px;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    margin-bottom: 1px;
+  }
+  
+  .about-me2{
+  color: white;
+  }
+  
+  .my-work{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightseagreen;
+  }
+  
+  #projects1{
+    display: flex;
+    justify-content: space-between;
+    padding: 190px;
+    padding-top: 3px;
+  }
+  
+  #projects2{
+    display: flex;
+    justify-content: space-between;
+    padding: 190px;
+    padding-top: 3px;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
