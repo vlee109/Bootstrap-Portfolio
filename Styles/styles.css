@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin-left: 50px;
     padding: 0;
     box-sizing: border-box;
   }
@@ -61,7 +61,7 @@
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg"); */
   
   /* Set a specific height */
-  height: 300%;
+  height: 280%;
   
   /* Position and center the image to scale nicely on all screens */
   background-position: right;
@@ -186,10 +186,29 @@
     padding: 190px;
     padding-top: 3px;
   }
-  
+
+  .accordion-button{
+    font-weight: bold;
+  }
+
+  .accordion-body{
+    text-align: center;
+  }
+
+  .Projects{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .projects3{
+    margin-left: 10px;
+  }
+
   footer{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    margin-bottom: 10px;
+   font: 100px;
+  }
+
+  h1{
+    font-size: large;
   }

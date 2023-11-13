@@ -4,14 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <title>Victor Lee // Front-End Web Developer</title>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="Styles/styles2.css"> -->
   <link rel="stylesheet" href="Styles/styles.css">
+
   <style>
     img{
     float: right;
@@ -20,15 +24,15 @@
     }
 
     footer{
+      font-size: small;
       text-align: center;
-      padding: 60px;
+      padding: 0px;
       background-color: lightseagreen;
       color: white;
     }
     html{scroll-behavior: smooth;}
 
   </style>
-</head>
 
 <!-- <div class="topnav">
   <header>
@@ -42,82 +46,34 @@
   <a href="#about">ABOUT ME</a> -->
 <!-- </div> -->
 
-
  <!-- Navigation Bar -->
- <nav class="navbar bg-body-tertiary fixed-top">
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Victor's Portfolio</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar"
-      aria-label="Toggle navigation"
-    >
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About Me</a>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
+            <a class="nav-link" href="#portfolio">Projects</a>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex mt-3" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
+            <a class="nav-link" href="#footer">Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+      
 
+</nav>
+
+</head>
 
 <body>
 
@@ -129,7 +85,7 @@
     width="300"
     height="500">
 
-    <div class="hero-text">
+<div class="hero-text">
       <h1>Victor Lee</h1>
       <br>
       <p>I am a frontend web developer!</p>
@@ -141,78 +97,105 @@
   </div>
 
    <!-- about me -->
-   <section id="about">
-    <br>
-    <center>
-    <h2>About Me</h2>
-    <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-    <br>Quidem aspernatur fugit qui quas atque architecto molestiae sapiente repudiandae quo.
-    <br>porro maxime modi quos iure maiores aliquam aut et eaque odio!
-    <br>
-    <br>
-    <br>
-  </center>
-  </section> 
+   <div id="about-me"></div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            About Me
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, laboriosam explicabo natus libero, quod impedit incidunt corrupti laborum beatae expedita voluptates sapiente delectus! Magnam, laborum cum quasi eveniet rem quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam sit similique minus, dolores ipsum, et omnis dolorem autem ipsam repudiandae blanditiis numquam quibusdam quod! Quam totam qui deleniti! Id!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Experience
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, laboriosam explicabo natus libero, quod impedit incidunt corrupti laborum beatae expedita voluptates sapiente delectus! Magnam, laborum cum quasi eveniet rem quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam sit similique minus, dolores ipsum, et omnis dolorem autem ipsam repudiandae blanditiis numquam quibusdam quod! Quam totam qui deleniti! Id!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Projects
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, laboriosam explicabo natus libero, quod impedit incidunt corrupti laborum beatae expedita voluptates sapiente delectus! Magnam, laborum cum quasi eveniet rem quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam sit similique minus, dolores ipsum, et omnis dolorem autem ipsam repudiandae blanditiis numquam quibusdam quod! Quam totam qui deleniti! Id!
+          </div>
+        </div>
+      </div>
+
+      <br>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work-text">
-      <br>
-      <center>
-      <h2>Work</h2>
-      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      <br>Excepturi unde aspernatur, sint doloribus laudantium laborum maxime quidem ipsam nesciunt.
-      <br>Dolores accusantium ipsum qui quaerat distinctio eligendi commodi aperiam molestiae blanditiis?</h5>
-      <br>
-      <br>
-    </center>
-    </section>
-
-  <div class="row">
-    <div class="column">
-      <div class="card">ndsnfds</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-  </div>
-
-<projects id="projects1">
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 1</a> </h3>
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 2</a> </h3>
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 3</a> </h3>
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 4</a> </h3>
-  </projects>
-
-  <div class="row">
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-    <div class="column">
-      <div class="card">..</div>
-    </div>
-  </div>
-  
-<projects id="projects2">
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 5</a> </h3>
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 6</a> </h3>
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 7</a> </h3>
-  <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank">Project 8</a> </h3>
-  </projects>
-
+    <div id="portfolioo"></div>
+      <div class="container text-center projects3">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                Project 1
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank" class="btn btn-primary">Click here to see more!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+               Project 2
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank" class="btn btn-primary">Click here to see more!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                Project 3
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank" class="btn btn-primary">Click here to see more!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-header">
+                Project 4
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="https://github.com/vlee109/Responsive-Portfolio-Challenge2" target="_blank" class="btn btn-primary">Click here to see more!</a>
+              </div>
+            </div>
+          </div>
   </main>
+
 </body>
+
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -223,7 +206,6 @@ crossorigin="anonymous"
   <h1>Contact me:</h2>
   <p>LinkedIn:<br /> Victor.Lee </p> 
   <p>Email:<br /> Victor@UOB.com</p> 
-  <p>Contact No:<br /> 07754138649</p> </div>
+  <p>Contact No:<br /> 07754138649</p>
 </footer>
-
 </html>
